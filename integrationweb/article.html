@@ -1,0 +1,66 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="agence,communication,programmation,programming,conception,ecology" />
+    <meta name="description" content="Page d'acceuil" />
+    <link rel="stylesheet" href="Fonts.css"/>
+    <link rel="stylesheet" href="app.css" />
+    <title>Article 1 Visuel</title>
+</head>
+<body id="appear" class="article_body">
+    <header id="navbar">
+        <ul>
+            <li id="logo"><a href="#">LOGO</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Eco-conception</a></li>
+            <li><a href="#">Programmation</a></li>
+            <li><a href="#">Conception</a></li>
+            <li><a href="#">Visuel</a></li>
+            <li><a href="#">Accueil</a></li>
+        </ul>
+    </header>
+    <main id="container">
+        <!-- 
+            TODO: changer l'algo pour fetch les bonnes images au bon moment
+        -->
+        <div class="carousel">
+            <div id="slide" class="1 index1 fade">
+                <img src="./img/graphisme.jpg" alt="okita" width="100%" id="imageCarousel">
+            </div>
+            <br />
+            <div style="text-align:center">
+                <span class="dot" onclick="changeSlide(0)"></span>
+                <span class="dot" onclick="changeSlide(1)"></span>
+            </div>
+        </div>
+        <script>
+            function changeSlide(i) {
+
+                let imagesArray = [
+                    "./img/graphisme.jpg",
+                    "./img/ville-iso.jpg"
+                ];
+
+                document.getElementById("imageCarousel").src= imagesArray[i];
+            }
+        </script>
+        <div id="article_container">
+            <h1 id="article_header">La 2D isométrique</h1>
+            <div id="actual_content">
+                <p>
+                La 2D isométrique est un moyen de dessiner la perspective. On peut la tracer à partir d'une grille que l'on génère sur Adobe Illustrator. On trace ensuite à l'aide de l'outil Plume des formes en suivant la grille de perspective. 
+                 C'est un travail plutôt long et fastidueux mais le résultat est plutôt sympa. Enfin selon moi, à vous de regarder et de juger par vous même ! On aime ou on n'aime pas. </br>
+                </br> Dans le carrousel d'image vous pouvez retrouver un quartier d'une ville, une île volante.
+                La ville présente 4 batiments, on pourrait penser que ce sont des magasins ou des batiments de bureaux... J'en ai aucune idée. C'est juste des batiments, faut pas analyser des images comme ça.</br>
+                </br> Sur la partie de l'île la plus basse, j'ai créé un panneau publicitaire pour Coca-Cola, pour dénoncer le monde dans lequel on vit qui est encombrer en permanence de publicité ! Enfaite nan ça faisait vide et j'avais soif... Voila c'est tout.
+                </br></br>
+                
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

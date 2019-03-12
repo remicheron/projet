@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="agence,communication,programmation,programming,conception,ecology" />
+    <meta name="description" content="Page d'acceuil" />
+    <link rel="stylesheet" href="app.css">
+    <title>Intégration web</title>
+</head>
+<body id="appear" style="overflow: hidden;">
+    <div id="homepage">
+        <header id="navbarhome"> <!-- Affichage de la barre principale de navigation --> 
+            <ul>
+                <li id="logo"><a href="#">LOGO</a></li>
+                <li><a href="#">TEST</a></li>
+                <li><a href="#">TEST</a></li>
+                <li><a href="#">TEST</a></li>
+                <li><a href="#">TEST</a></li>
+            </ul>
+        </header>
+        <main>
+            <div id="blocks">
+				<img src="a.propos.png" id="apropos"/> <!-- Affichage de l'image pour des bulles a propos --> 
+            </div>
+        </main>
+        <script type="text/javascript">
+
+            //function to trigger an animation on the body when switching from a page to another
+            function exitPage(addr) {
+                document.getElementById("appear").id = "fade_out"; // changing the class
+                window.setTimeout(function() {
+                    window.location = addr; //going to the other page
+                }, 1200);
+               
+            }
+            
+        </script>
+    </div>
+</body>
+</html>

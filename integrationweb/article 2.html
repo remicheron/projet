@@ -1,0 +1,62 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="agence,communication,programmation,programming,conception,ecology" />
+    <meta name="description" content="Page d'acceuil" />
+    <link rel="stylesheet" href="Fonts.css"/>
+    <link rel="stylesheet" href="app.css" />
+    <title>Article 2</title>
+</head>
+<body id="appear" class="article_body">
+    <header id="navbar">
+        <ul>
+            <li id="logo"><a href="#">LOGO</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Eco-conception</a></li>
+            <li><a href="#">Programmation</a></li>
+            <li><a href="#">Conception</a></li>
+            <li><a href="#">Visuel</a></li>
+            <li><a href="#">Accueil</a></li>
+        </ul>
+    </header>
+    <main id="container">
+        <!-- 
+            TODO: changer l'algo pour fetch les bonnes images au bon moment
+        -->
+        <div class="carousel">
+            <div id="slide" class="1 index1 fade">
+                <img src="./img/neon-city.jpg" alt="okita" width="100%" id="imageCarousel">
+            </div>
+            <br />
+            <div style="text-align:center">
+                <span class="dot" onclick="changeSlide(0)"></span>
+                <span class="dot" onclick="changeSlide(1)"></span>
+            </div>
+        </div>
+        <script>
+            function changeSlide(i) {
+
+                let imagesArray = [
+                    "./img/planete-verre.jpg",
+                    "./img/neon-city.jpg",  
+                ];
+
+                document.getElementById("imageCarousel").src= imagesArray[i];
+            }
+        </script>
+        <div id="article_container">
+            <h1 id="article_header">Les paysages fantastiques et futuristes</h1>
+            <div id="actual_content">
+                <p>
+               Bon là j'ai pas grand chose à dire... </br></br> La première image représente une planete en verre. Comme une boule à neige... Mais dans l'espace. Je l'ai réalisé en additionnant plusieurs calque avec une faible opacité, et en ajoutant des halo de lumière... Rien de bien ouf mais le résultat est là ! </br> </br>
+               La deuxième image représente quant à elle représente une ville futuriste dans un halo de lumière. Je me suis inspiré d'une pochette de CD mais je me rappelle pas du tout duquelle... j'ai essayer de faire un travail avec les couleurs pour accentuer l'effet clair/sombre. On retrouve aussi de la perspective sur les batiments.   
+
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

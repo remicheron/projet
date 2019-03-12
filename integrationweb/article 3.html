@@ -1,0 +1,63 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="agence,communication,programmation,programming,conception,ecology" />
+    <meta name="description" content="Page d'acceuil" />
+    <link rel="stylesheet" href="Fonts.css"/>
+    <link rel="stylesheet" href="app.css" />
+    <title>Article 3 Visuel</title>
+</head>
+<body id="appear" class="article_body">
+    <header id="navbar">
+        <ul>
+            <li id="logo"><a href="#">LOGO</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Eco-conception</a></li>
+            <li><a href="#">Programmation</a></li>
+            <li><a href="#">Conception</a></li>
+            <li><a href="#">Visuel</a></li>
+            <li><a href="#">Accueil</a></li>
+        </ul>
+    </header>
+    <main id="container">
+        <!-- 
+            TODO: changer l'algo pour fetch les bonnes images au bon moment
+        -->
+        <div class="carousel">
+            <div id="slide" class="1 index1 fade">
+                <img src="./img/img1.jpg" alt="okita" width="100%" id="imageCarousel">
+            </div>
+            <br />
+            <div style="text-align:center">
+                <span class="dot" onclick="changeSlide(0)"></span>
+                <span class="dot" onclick="changeSlide(1)"></span>
+            </div>
+        </div>
+        <script>
+            function changeSlide(i) {
+
+                let imagesArray = [
+                    "./img/img1.jpg",
+                    "./img/img2.jpg"
+                ];
+
+                document.getElementById("imageCarousel").src= imagesArray[i];
+            }
+        </script>
+        <div id="article_container">
+            <h1 id="article_header">Le Chamboultou à idées</h1>
+            <div id="actual_content">
+                <p>
+              Bon ici c'est le bordel... J'y ai mit tout ce que je ne savais pas trier ! Vous pouvez retrouver des vides, des affiches, des pochettes de CD, des photos, des personnages en dessin... </br></br>
+              C'est des création réalisé à partir de la suite Adobe, notament Illustrator, Photoshop, Première pro. Ses créations ont été évidement produite à des moments totalement inappropriés ! </br> </br>
+              Donnez moi vos avis via la page de contact !
+                            
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
